@@ -1,0 +1,11 @@
+{
+	"development": {
+		"username": "root",
+		"password": null,
+		"database": "handover",
+		"host": "127.0.0.1",
+		"dialect": "mysql"
+	},
+	"env": "development",
+	"secretKey": "9c966837e17bd7739c00cbbef665739a"
+}
