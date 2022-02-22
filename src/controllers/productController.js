@@ -49,7 +49,7 @@ module.exports = {
 			if (!typeId) throw 'typeId is missing';
 
 			if (typeId < 1 || typeId > 4) throw 'Invalid typeId';
-			const values = { name: name, amount: amount, ProductTypeId: typeId };
+			const values = { name: name, amount: amount, liters: liters, size: size, type: type, usability: usability, ProductTypeId: typeId };
 
 			if (typeId === 1) {
 				if (!liters) throw 'liters is missing';
