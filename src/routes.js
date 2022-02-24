@@ -19,8 +19,8 @@ router.post("/register", register);
 router.post("/login", login);
 
 //* Products
-router.get("/products", auth, indexProduct);
-router.get("/products/:productId", auth, showProduct);
+router.get("/products", indexProduct, auth);
+router.get("/products/:productId", showProduct, auth);
 router.post("/products/", createProduct, auth);
 router.put("/products/:productId", auth, updateProduct);
 router.delete("/products/:productId", auth, deleteProduct);

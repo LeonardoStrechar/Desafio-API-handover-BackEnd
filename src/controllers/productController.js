@@ -33,7 +33,7 @@ module.exports = {
 			const { productId } = req.params;
 
 			return res.status(200).json({
-				product: await sequelize.Product.findByPk(productId, { include: 'ProductType' }),
+				product: await sequelize.Product.findByPk(productId, { include: 'ProductTypeId' }),
 			});
 		} catch (err) {
 			return await res.status(400).json({ error: err });
