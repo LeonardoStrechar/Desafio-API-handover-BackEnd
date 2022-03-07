@@ -1,6 +1,6 @@
 # How to install
 
-1. Create a database
+1. Create a database named "handover"
 2. Set you database configuration in config.json in the development key
 3. Run `npm install`
 4. Run `npm run migrate`
